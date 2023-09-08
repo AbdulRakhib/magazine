@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Document</title>
+
+	<!-- jQuery CDN link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="turn.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+	<!--jQuery code-->
+	<!-- <script>
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("p").css("color", "green");
+			});
+		});
+	</script>
+
+	<button>
+		Change the color of the text to Green
+	</button> -->
+    <!-- <script type="text/javascript">
+        $("#flipbook").turn({
+            width: 400,
+            height: 300,
+            autoCenter: true
+        });
+    </script> -->
+    <!-- <script>
+        var flipbookEL = document.getElementById('flipbook');
+        window.addEventListener('resize', function (e) {
+        flipbookEL.style.width = '';
+        flipbookEL.style.height = '';
+        $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+        });
+        $(flipbookEL).turn({
+            autoCenter: true
+        });
+    </script>-->
+    
+</head>
+
+<body>
+	<div id="flipbook" style="display: flex; position: relative; align-items: center; justify-content: center; left: 544px; top:5px;">
+        <div class="hard"> </div>
+        <div class="hard"></div>
+        <div> <img src="CONVERTIO/1.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/1.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/2.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/3.jpg" alt=""> </div>    
+        <div> <img src="CONVERTIO/4.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/5.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/6.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/7.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/8.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/9.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/10.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/11.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/12.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/13.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/14.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/15.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/16.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/17.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/18.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/19.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/20.jpg" alt=""> </div>
+        <div> <img src="CONVERTIO/21.jpg" alt=""> </div>
+        <div class="hard"></div>
+        <div class="hard"></div>
+    </div>
+    
+    <script type="text/javascript">
+        $("#flipbook").turn({
+            width: 3405,
+            height: 2200,
+            autoCenter: true
+        });
+
+        document.onkeydown = function (event) {
+        event = event || window.event;
+        var keyCode = event.keyCode;
+        if (keyCode === 37) {
+        // Left arrow key
+        $("#flipbook").turn("previous");
+        } else if (keyCode === 39) {
+        // Right arrow key
+        $("#flipbook").turn("next");
+        }
+        };
+    </script>
+    
+</body>
+
+</html> 
